@@ -18,15 +18,15 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button{fon
 .hd{position:fixed;top:0;left:0;right:0;z-index:100;height:84px;background:#fff;transition:box-shadow .3s}
 .hd.sc{box-shadow:0 1px 0 var(--ln)}
 .hd .in{height:100%;display:flex;align-items:center;padding:0 var(--g)}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.02em;color:var(--ink)}
-.logo i{width:30px;height:30px;border-radius:9px 3px 9px 3px;background:conic-gradient(from 210deg,#0F9D6E,#0A7C5A,#1E3A8A,#0F9D6E);display:block}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:24px;letter-spacing:-.02em;color:var(--ink)}
+.logo i{width:34px;height:34px;border-radius:9px 3px 9px 3px;background:conic-gradient(from 210deg,#0F9D6E,#0A7C5A,#1E3A8A,#0F9D6E);display:block}
 .logo span{color:var(--acc)}
 .gnb{display:flex;margin:0 auto;height:100%}
-.gnb>li{list-style:none;height:100%}.gnb>li>a{display:flex;align-items:center;height:100%;padding:0 22px;font-size:16.5px;font-weight:600;color:var(--ink2);position:relative}
+.gnb>li{list-style:none;height:100%}.gnb>li>a{display:flex;align-items:center;height:100%;padding:0 24px;font-size:18.5px;font-weight:700;color:var(--ink2);position:relative}
 .gnb>li>a:after{content:"";position:absolute;left:22px;right:22px;bottom:0;height:2px;background:var(--acc);transform:scaleX(0);transition:transform .3s}
 .gnb>li:hover>a,.gnb>li.on>a{color:var(--acc)}.gnb>li:hover>a:after{transform:scaleX(1)}
 .util{display:flex;align-items:center;gap:14px}
-.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid #D5D9DE;border-radius:99px;padding:8px 16px;font-size:14px;font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid #D5D9DE;border-radius:99px;padding:9px 18px;font-size:15.5px;font-weight:600}
 .pill:hover{border-color:var(--ink)}
 .ico{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:none;border:0;cursor:pointer;color:var(--ink)}
 .ico:hover{background:var(--bg)}
@@ -35,8 +35,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button{fon
 .mega .in{display:grid;grid-template-columns:200px repeat(6,1fr) 240px;height:auto;padding:30px var(--g) 36px;align-items:start}
 .mega .badge{font-size:13px;color:var(--mu);line-height:1.5}.mega .badge b{display:block;font-size:22px;color:var(--ink);margin-bottom:6px}
 .mega .col{padding:0 14px;border-left:1px solid var(--ln);min-height:200px}
-.mega .col b{display:block;font-size:15px;margin-bottom:12px;color:var(--ink)}
-.mega .col a{display:block;font-size:14.5px;color:var(--mu);padding:5px 0}.mega .col a:hover{color:var(--acc);text-decoration:underline}
+.mega .col b{display:block;font-size:17px;margin-bottom:12px;color:var(--ink)}
+.mega .col a{display:block;font-size:15.5px;color:var(--mu);padding:5px 0}.mega .col a:hover{color:var(--acc);text-decoration:underline}
 .mega .cta{display:flex;flex-direction:column;gap:10px;padding-left:20px}
 .mega .cta a{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-radius:12px;background:var(--bg);font-weight:700;font-size:15px}
 .mega .cta a.g{background:linear-gradient(135deg,#0F9D6E,#0A7C5A);color:#fff}
@@ -178,7 +178,7 @@ footer{background:#1E1E1E;color:#A9A9A9;margin-top:120px}
 .sv:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.1))}
 .sv .t{position:relative;z-index:1;padding:0 clamp(24px,6vw,80px) 50px}.sv small{font-weight:700;letter-spacing:.14em;opacity:.85}.sv h1{font-size:clamp(34px,4.5vw,58px);margin:6px 0 0;letter-spacing:-.03em}
 .lnb{display:flex;gap:4px;border-bottom:1px solid var(--ln);overflow-x:auto;margin:30px 0 0}
-.lnb a{padding:16px 22px;font-weight:600;color:var(--mu);border-bottom:2px solid transparent;white-space:nowrap}.lnb a.on{color:var(--ink);border-bottom-color:var(--ink)}
+.lnb a{padding:16px 22px;font-size:17px;font-weight:700;color:var(--mu);border-bottom:2px solid transparent;white-space:nowrap}.lnb a.on{color:var(--ink);border-bottom-color:var(--ink)}
 .crumb{display:flex;gap:8px;font-size:14px;color:var(--mu);margin:22px 0 0}.crumb a:hover{color:var(--ink)}
 .sb{padding:60px 0 0;min-height:40vh}
 .sb h2{font-size:clamp(28px,3vw,40px);letter-spacing:-.03em;margin:0 0 20px}.sb h3{font-size:24px;margin:50px 0 16px;letter-spacing:-.02em}
@@ -232,8 +232,8 @@ footer{background:#1E1E1E;color:#A9A9A9;margin-top:120px}
  </div></div>
 
  <section class="sec"><div class="wrap"><div class="bento fade">
-  <a class="bx tech" href="#/biz/semi"><img src="img/flange_bento.jpg" alt=""><h3>Technology <svg class="arrow" style="width:30px;height:30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></h3><p>27년간 쌓은 정밀 가공 기술과 양산 경험으로 고객의 다양한 요구를 만족시키겠습니다.</p>
-   <div class="chips" onclick="event.stopPropagation()"><a href="#/biz/auto">자동차 부품 →</a><a href="#/biz/semi">반도체 장비 →</a><a href="#/biz/ind">산업기계 →</a><a href="#/tech/turning">정밀 선삭 →</a><a href="#/tech/5axis">5축 가공 →</a><a href="#/tech/grind">연삭 · 열처리 →</a></div></a>
+  <div class="bx tech" onclick="if(!event.target.closest('a'))location.hash='#/biz/semi'" style="cursor:pointer"><img src="img/flange_bento.jpg" alt=""><h3>Technology <svg class="arrow" style="width:30px;height:30px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></h3><p>27년간 쌓은 정밀 가공 기술과 양산 경험으로 고객의 다양한 요구를 만족시키겠습니다.</p>
+   <div class="chips"><a href="#/biz/auto">자동차 부품 →</a><a href="#/biz/semi">반도체 장비 →</a><a href="#/biz/ind">산업기계 →</a><a href="#/tech/turning">정밀 선삭 →</a><a href="#/tech/5axis">5축 가공 →</a><a href="#/tech/grind">연삭 · 열처리 →</a></div></div>
   <a class="bx net" href="#/about/location"><h4>Global Network</h4><p>일본 · 미국 · 독일 등 12개국 고객사에 부품을 공급하고 있습니다.</p>
    <svg viewBox="0 0 400 200" aria-hidden="true"><g fill="#8E9BFF"></g></svg></a>
   <a class="bx ask" href="#rfq"><h4>견적 문의</h4><p>도면을 보내 주시면 1영업일 안에 신속하고 정확하게 답변드리겠습니다.</p>
