@@ -50,6 +50,7 @@ main{padding-top:84px}
 .kv .sl.on{opacity:1}
 .kv .sl img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform 9s linear}
 .kv .sl.on img{transform:scale(1.08)}
+.kv .sl video{width:100%;height:100%;object-fit:cover;display:block}
 .kv:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.62),rgba(0,0,0,.18) 60%,rgba(0,0,0,0));pointer-events:none}
 .kv .tx{position:absolute;left:clamp(24px,6vw,96px);top:50%;transform:translateY(-50%);z-index:2;color:#fff;max-width:760px}
 .kv .ctrl{display:flex;align-items:center;gap:8px;margin-bottom:28px}
@@ -230,7 +231,7 @@ footer{background:#1E1E1E;color:#A9A9A9;margin-top:120px}
 <div id="home">
  <div class="wrap"><div class="kv" id="kv">
   <div class="sl on"><img src="img/hero.jpg" alt="한빛정밀 김해 공장"></div>
-  <div class="sl"><img src="img/cnc.jpg" alt="CNC 가공 라인"></div>
+  <div class="sl"><video src="img/cnc.mp4" poster="img/cnc_poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="CNC 가공 라인"></video></div>
   <div class="sl"><img src="img/flange.jpg" alt="반도체 장비용 진공 플랜지"></div>
   <div class="tx">
    <div class="ctrl"><button id="kvp" aria-label="멈춤">❚❚</button><span class="bar on"><i></i></span><span class="bar"><i></i></span><span class="bar"><i></i></span></div>
@@ -401,7 +402,7 @@ const P={
 
 "tech/turning":`<h2>정밀 선삭</h2><p class="lead">CNC 선반 22대와 복합 선반 6대로<br><em>Ø3부터 Ø400mm까지</em> 깎습니다.</p>
 <div class="kp"><div><b>28<small>대</small></b><span>선삭 설비</span></div><div><b>±0.005<small>mm</small></b><span>표준 공차</span></div><div><b>8<small>라인</small></b><span>로봇 · 바 피더 자동화</span></div><div><b>24<small>시간</small></b><span>무인 야간 가공</span></div></div>
-<div class="sp"><div class="im"><img src="img/cnc_z.jpg" alt=""></div><div><span class="tg">CAPABILITY</span><h4>한 번 물려서 끝까지</h4><p>복합 선반으로 선삭 · 밀링 · 드릴을 한 번의 세팅으로 끝내 동심도를 지킵니다.</p></div></div>
+<div class="sp"><div class="im"><img src="img/lathe.jpg" alt="CNC 선반 가공"></div><div><span class="tg">CAPABILITY</span><h4>한 번 물려서 끝까지</h4><p>복합 선반으로 선삭 · 밀링 · 드릴을 한 번의 세팅으로 끝내 동심도를 지킵니다.</p></div></div>
 <table class="tbl"><tr><th>최대 가공경</th><td>Ø400mm</td></tr><tr><th>최대 길이</th><td>800mm</td></tr><tr><th>공차</th><td>±0.005mm (연삭 시 ±0.002mm)</td></tr><tr><th>자동화</th><td>바 피더 · 로봇 로딩 8라인</td></tr></table>`,
 
 "tech/5axis":`<h2>5축 가공</h2><p class="lead">복잡한 형상을 <em>한 번의 세팅</em>으로.<br>정밀도와 납기를 함께 잡습니다.</p>
@@ -411,12 +412,12 @@ const P={
 "tech/grind":`<h2>연삭 · 열처리</h2><p class="lead">열처리와 연삭을 <em>모두 공장 안에서</em>.<br>외주 대기 없이 납기를 줄입니다.</p>
 <div class="kp"><div><b>HRC 58~62</b><span>고주파 경화 범위</span></div><div><b>±0.002<small>mm</small></b><span>연삭 공차</span></div><div><b>-5<small>일</small></b><span>외주 대비 납기 단축</span></div><div><b>6<small>대</small></b><span>연삭기</span></div></div>
 <div class="st" style="--n:4"><div><b>선삭</b><span>연삭 여유 0.2mm</span></div><div><b>고주파 열처리</b><span>경화 깊이 관리</span></div><div><b>원통 · 센터리스 연삭</b><span>진원도 0.002mm</span></div><div><b>경도 · 치수 측정</b><span>전수 기록</span></div></div>
-<div class="sp"><div class="im"><img src="img/shaft.jpg" alt=""></div><div><span class="tg">IN-HOUSE</span><h4>왜 사내 처리인가요?</h4><p>열처리를 외주로 보내면 왕복 운송과 대기로 평균 5일이 더 걸립니다. 한빛정밀은 한 공장 안에서 이어서 처리합니다.</p></div></div>`,
+<div class="sp"><div class="im"><img src="img/grind.jpg" alt="원통 연삭"></div><div><span class="tg">IN-HOUSE</span><h4>왜 사내 처리인가요?</h4><p>열처리를 외주로 보내면 왕복 운송과 대기로 평균 5일이 더 걸립니다. 한빛정밀은 한 공장 안에서 이어서 처리합니다.</p></div></div>`,
 
 "tech/equip":`<h2>설비 현황</h2><p class="lead">가공부터 측정까지 <em>57대</em>.<br>매년 매출의 8%를 설비에 다시 투자합니다.</p>
 <div class="br"><div><span>선삭</span><i style="--w:100%"></i><b>28대</b></div><div><span>밀링 · 5축</span><i style="--w:50%"></i><b>14대</b></div><div><span>측정</span><i style="--w:25%"></i><b>7대</b></div><div><span>연삭</span><i style="--w:21%"></i><b>6대</b></div><div><span>열처리</span><i style="--w:7%"></i><b>2대</b></div></div>
 <table class="tbl" style="margin-top:30px"><tr><th>구분</th><th>설비</th><th>대수</th></tr><tr><td>선삭</td><td>CNC 선반 22 · 복합 선반 6</td><td>28</td></tr><tr><td>밀링</td><td>머시닝센터 4 · 5축 10</td><td>14</td></tr><tr><td>연삭</td><td>원통 4 · 센터리스 2</td><td>6</td></tr><tr><td>측정</td><td>3차원 측정기 2 · 윤곽 2 · 조도 2 · 진원도 1</td><td>7</td></tr><tr><td>열처리</td><td>고주파 열처리기</td><td>2</td></tr></table>
-<div class="gx"><figure><img src="img/cnc.jpg" alt=""><figcaption>머시닝 라인</figcaption></figure><figure><img src="img/cnc_z.jpg" alt=""><figcaption>선삭 라인</figcaption></figure><figure><img src="img/quality_bg.jpg" alt=""><figcaption>항온 측정실</figcaption></figure></div>`,
+<div class="gx"><figure><img src="img/cnc.jpg" alt=""><figcaption>머시닝 라인</figcaption></figure><figure><img src="img/lathe.jpg" alt=""><figcaption>선삭 라인</figcaption></figure><figure><img src="img/quality_bg.jpg" alt=""><figcaption>항온 측정실</figcaption></figure></div>`,
 
 "tech/quality":`<h2>품질 · 측정</h2><p class="lead">모든 출하품에 <em>측정 성적서</em>를 넣습니다.<br>숫자로 증명하는 품질입니다.</p>
 <div class="kp"><div><b>12<small>ppm</small></b><span>지난해 불량률</span></div><div><b>0.001<small>mm</small></b><span>측정 분해능</span></div><div><b>20±1<small>℃</small></b><span>항온 측정실</span></div><div><b>100<small>%</small></b><span>성적서 동봉</span></div></div>
